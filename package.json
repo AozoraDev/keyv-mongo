@@ -1,0 +1,39 @@
+{
+  "name": "@aozoradev/keyv-mongo",
+  "version": "1.0.0",
+  "description": "MongoDB storage adapter for Keyv",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "xo && nyc --no-clean --temp-dir ../../.nyc_output ava"
+  },
+  "xo": {
+    "extends": "xo-lukechilds"
+  },
+  "ava": {
+    "require": [
+      "requirable"
+    ]
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "keyv",
+    "storage",
+    "adapter",
+    "key",
+    "value",
+    "store",
+    "cache",
+    "ttl"
+  ],
+  "author": "Luke Childs <lukechilds123@gmail.com> (http://lukechilds.co.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AozoraDev/keyv-mongo/issues"
+  },
+  "homepage": "https://github.com/AozoraDev/keyv-mongo",
+  "dependencies": {
+    "mongodb": "^3.6.6",
+    "pify": "^5.0.0"
+  },
+}
