@@ -35,5 +35,5 @@
   "dependencies": {
     "mongodb": "^3.6.6",
     "pify": "^5.0.0"
-  },
+  }
 }
