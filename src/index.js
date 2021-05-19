@@ -49,7 +49,7 @@ class KeyvMongo extends EventEmitter {
 						expireAfterSeconds: 0,
 						background: true
 					});
-					for (const method of ['updateOne', 'find', 'findOne', 'deleteOne', 'deleteMany']) {
+					for (const method of ['updateOne', 'findOne', 'deleteOne', 'deleteMany']) {
 						this.store[method] = pify(this.store[method].bind(this.store));
 					}
 
