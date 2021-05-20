@@ -93,8 +93,8 @@ class KeyvMongo extends EventEmitter {
 				.then(object => object.deletedCount > 0)
 			);
 	}
-	
-	getAll() {
+
+  getAll() {
 		return this.connect
 			.then(store => store.find({}).toArray());
 	}
